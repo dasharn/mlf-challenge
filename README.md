@@ -59,7 +59,7 @@ The C3PO Navigation System is designed to help the Millennium Falcon navigate th
 Use the following command to run the unit tests:
 
 ```sh
-python -m unittest cp30_tests.py
+python -m unittest cp30_tests.py -v
 ```
 
 ## Usage
