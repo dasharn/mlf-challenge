@@ -107,4 +107,43 @@ print(f"The probability of success is: {odds:.2f}")
         ...
     ]
 }
+
 ```
+
+## Extensions
+
+### User Experience
+
+**1. Intuitive Interface:**
+
+To make sure clients really get how to use the software and find it useful, I’d design the UI with some key features:
+
+- **Easy File Uploads:** Users would upload their Millennium Falcon and Empire JSON files through simple "Select File" buttons. I’d make sure the software checks the files for issues like wrong formats or missing data and tells users right away if there’s a problem.
+
+- **Clear Instructions and Feedback:** The app would give clear instructions and instant feedback. After uploading files, users would see progress updates and confirmation messages, so they know exactly what’s happening and what to do next.
+
+- **Visualizations:** To enhance user understanding, I would incorporate visualizations that display routes and travel times on an interactive map. This feature would provide users with a clear, graphical representation of their data, making it easier to grasp the navigation paths and travel durations at a glance
+
+- **Results Presentation:** Results would be shown in a dedicated section, making it easy for users to see the maximum probability of success. I’d make sure the information is straightforward and easy to interpret.
+
+**2. User Testing and Iteration:**
+
+In real life, I’d make sure the app is tested with real users to get their feedback. Based on what they say, I’d tweak and improve the design to make sure it works well for everyone.
+
+**3. Documentation and Training:**
+
+To help users understand and use the software, I’d provide:
+
+- **User Guides:** Detailed guides with step-by-step instructions and screenshots to help users get started and solve any problems they might have.
+
+- **Training Sessions:** Optional training sessions for key users to walk them through the software’s features and how to use them effectively.
+
+### Ease of Deployment and Operation
+
+**1. Easy Deployment:**
+
+**Packaging and Distribution:**
+
+- **Standalone Executable:** I’d package the software as a standalone executable or installer. This way, users wouldn’t have to worry about installing additional dependencies or setting up environments manually.
+
+- **Automated Setup:** An automated setup process would be included, probably through an installer or setup wizard. This would ensure that everything is installed and configured correctly, making the deployment process smoother and reducing the chances of errors.
