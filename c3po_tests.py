@@ -1,6 +1,6 @@
 import unittest
 import os
-from cp30 import C3PO
+from c3po import C3PO
 
 class C3POTests(unittest.TestCase):
     def setUp(self):
