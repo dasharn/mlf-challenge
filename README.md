@@ -64,17 +64,26 @@ python -m unittest c3po_tests.py -v
 
 ## Usage
 
-To use the C3PO Navigation System, create an instance of the `C3PO` class with the path to the `millennium-falcon.json` file. Then, call the `giveMeTheOdds` method with the path to the `empire.json` file to calculate the success probability.
+To use the C3PO Navigation System, you can
+A - create an instance of the `C3PO` class with the path to the `millennium-falcon.json` file. Then, call the `giveMeTheOdds` method with the path to the `empire.json` file to calculate the success probability.
+
+B - execute `python app.py` in terminal and select the `millennium-falcon.json` and `empire.json` you want to use from the UI
 
 ### Example
 
 ```python
-from cp30 import C3PO
 
 c3po = C3PO('examples/example1/millennium-falcon.json')
 odds = c3po.giveMeTheOdds('examples/example1/empire.json')
 print(f"The probability of success is: {odds:.2f}")
 ```
+
+or run this command in ther terminal
+```python
+
+python app.py
+```
+
 
 ## JSON File Structure
 
@@ -146,4 +155,4 @@ To help users understand and use the software, I’d provide:
 
 - **Standalone Executable:** I’d package the software as a standalone executable or installer. This way, users wouldn’t have to worry about installing additional dependencies or setting up environments manually.
 
-- **Automated Setup:** An automated setup process would be included, probably through an installer or setup wizard. This would ensure that everything is installed and configured correctly, making the deployment process smoother and reducing the chances of errors.
+- **Automated Setup:** An automated setup process would be included, probably through an installer or setup wizard. This would ensure that everything is installed and configured correctly, making the deployment process smoother and reducing the chances of errors. I have recently discovered my self from doing an internship that setting up the software for the first time can often be a ardous process.
