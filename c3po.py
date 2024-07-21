@@ -48,7 +48,7 @@ class C3PO:
             with open(file_path, 'r') as f:
                 return json.load(f)
         except FileNotFoundError:
-            raise ValueError(f"File not found: {file_path}")
+            raise FileNotFoundError(f"File not found: {file_path}")
         except json.JSONDecodeError:
             raise ValueError(f"Invalid JSON format in file: {file_path}")
 
@@ -105,7 +105,7 @@ class C3PO:
         #First Level (Outermost): Represents the current planet or location in the traversal. This allows the algorithm to keep track of different locations separately.
         #Second Level: Represents the day in the traversal. This is crucial for algorithms that need to consider the progression of time or steps, as it allows tracking the state of each location at different times.
         #Third Level (Innermost): Represents the autonomy level or any other metric that might change as the traversal progresses. This level allows tracking finer-grained state information that could affect the outcome or decision-making process.
-        #Value (Float): The final value represent the probability of success
+        #Value (Float): The final value represents the probability of success
         visited = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
         
         # Initialize the maximum probability of success to 0.0
