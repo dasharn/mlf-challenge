@@ -99,13 +99,13 @@ class C3PO:
         queue = deque([(start, 0, self.autonomy, 1.0)])
 
         # Use a nested defaultdict to keep track of visited states with their corresponding probability of success
-        # Dynamic Initialization: The use of defaultdict with lambda functions allows for dynamic and on-demand creation of nested dictionaries and default values. This means that you don't need to initialize the structure for all possible keys ahead of time. Instead, any attempt to access a non-existent key will automatically initialize it with the specified default structure or value. This is highly efficient for sparse data where only a subset of all possible key combinations will actually be used.
+        # The use of defaultdict with lambda functions allows for dynamic and on-demand creation of nested dictionaries and default values. This means that you don't need to initialize the structure for all possible keys ahead of time. Instead, any attempt to access a non-existent key will automatically initialize it with the specified default structure or value. This is highly efficient for sparse data where only a subset of all possible key combinations will actually be used.
 
         #Purpose of Each Level:
         #First Level (Outermost): Represents the current planet or location in the traversal. This allows the algorithm to keep track of different locations separately.
-        #Second Level: Represents the day or time step in the traversal. This is crucial for algorithms that need to consider the progression of time or steps, as it allows tracking the state of each location at different times.
+        #Second Level: Represents the day in the traversal. This is crucial for algorithms that need to consider the progression of time or steps, as it allows tracking the state of each location at different times.
         #Third Level (Innermost): Represents the autonomy level or any other metric that might change as the traversal progresses. This level allows tracking finer-grained state information that could affect the outcome or decision-making process.
-        #Value (Float): The final value, a float, typically represents a metric like probability of success, cost, or any numerical value associated with reaching or being in a state defined by the outer keys.
+        #Value (Float): The final value represent the probability of success
         visited = defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
         
         # Initialize the maximum probability of success to 0.0
