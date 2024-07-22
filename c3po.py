@@ -99,7 +99,7 @@ class C3PO:
         queue = deque([(start, 0, self.autonomy, 1.0)])
 
         # Use a nested defaultdict to keep track of visited states with their corresponding probability of success
-        # The use of defaultdict with lambda functions allows for dynamic and on-demand creation of nested dictionaries and default values. This means that you don't need to initialize the structure for all possible keys ahead of time. Instead, any attempt to access a non-existent key will automatically initialize it with the specified default structure or value. This is highly efficient for sparse data where only a subset of all possible key combinations will actually be used.
+        # The use of defaultdict with lambda functions allows for dynamic and on-demand creation of nested dictionaries and default values. This means that you don't need to initialize the structure for all possible keys ahead of time. Instead, any attempt to access a non-existent key will automatically initialize it with the specified default structure or value.
 
         #Purpose of Each Level:
         #First Level (Outermost): Represents the current planet or location in the traversal. This allows the algorithm to keep track of different locations separately.
