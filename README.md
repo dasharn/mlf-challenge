@@ -155,4 +155,4 @@ To help users understand and use the software, I’d provide:
 
 - **Standalone Executable:** I’d package the software as a standalone executable or installer. This way, users wouldn’t have to worry about installing additional dependencies or setting up environments manually.
 
-- **Automated Setup:** An automated setup process would be included, probably through an installer or setup wizard. This would ensure that everything is installed and configured correctly, making the deployment process smoother and reducing the chances of errors. I have recently discovered my self from doing an internship that setting up the software for the first time can often be a ardous process.
+- **Automated Setup:** An automated setup process would be included, probably through an installer or setup wizard. This would ensure that everything is installed and configured correctly, making the deployment process smoother and reducing the chances of errors. I have recently discovered my self from doing an internship that setting up the software for the first time can often be an ardous process.
